@@ -1,6 +1,4 @@
-# Country-Specific Data Guidelines
-
-## Adding Contact Details of Officials
+# Country-Specific Data Guidelines. How to add Contact Details of Officials
 
 ### Finding Information
 1. **Official Government Portals**: Check official government websites for contact details of officials.
@@ -57,6 +55,41 @@ repository-name/
 ```
 3. **File Naming Convention**: Use the official's name in the file name, formatted as `{official-name}.json`.
 
+## Business Affiliations Guideline. How to add Business Affiliations of Officials
+
+### Finding Information
+1. **Official Disclosures**: Check for official financial and business disclosure documents.
+2. **Public Records**: Use public business registries and reputable news sources.
+3. **Research Reports**: Utilize reports from NGOs and research institutions on business affiliations.
+
+### Adding Business Affiliation Data
+1. **Create Directories**: Follow the structure `data/country/{country-name}/contacts/businesses`.
+2. **JSON Template**: Use the standard JSON template to add business affiliation details for each official.
+3. **File Naming Convention**: Use the official's name in the file name, formatted as `{official-name}.json`.
+
+### Example JSON Template
+```json
+{
+  "name": "John Doe",
+  "position": "Representative",
+  "country": "Nigeria",
+  "businesses": [
+    {
+      "business_name": "Doe Enterprises",
+      "industry": "Construction",
+      "role": "Owner",
+      "ownership_percentage": 100,
+      "address": "123 Business Street, Lagos, Nigeria",
+      "contact": {
+        "phone": "+234-123-456-7891",
+        "email": "info@doeenterprises.ng"
+      },
+      "notes": "Major government contractor."
+    }
+  ]
+}
+```
+
 ### Contribution Workflow
 1. **Fork the Repository**: Fork the main repository to your GitHub account.
 2. **Create a Branch**: Create a new branch for your additions (e.g., `add-nigeria-contacts`).
@@ -67,3 +100,5 @@ repository-name/
 1. **Initial Review**: A maintainer will review your pull request for structure and completeness.
 2. **Feedback**: You may receive feedback or requests for additional information or changes.
 3. **Approval**: Once approved, your data will be merged into the main repository.
+
+Thank you for your contribution to OpenGov Africa.
