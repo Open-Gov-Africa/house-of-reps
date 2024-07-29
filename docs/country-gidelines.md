@@ -20,6 +20,8 @@ repository-name/
 │   │   │   │   │   ├── {official-name}.json
 │   │   │   │   ├── ministers/
 │   │   │   │   │   ├── {official-name}.json
+│   │   │   │   ├── businesses/
+│   │   │   │   │   ├── {official-name}.json
 │   │   │   └── ...
 │   │   ├── kenya/
 │   │   └── ...
